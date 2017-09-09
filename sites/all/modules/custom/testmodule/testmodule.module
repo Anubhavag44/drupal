@@ -1,0 +1,24 @@
+<?php
+
+/**
+ * Implements hook_menu().
+ */
+function testmodule_menu() {
+  $items = array();
+
+  $items['mypage'] = array(
+    'title' => 'My Page',
+    'description' => 'Demo for custom module.',
+    'type' => MENU_NORMAL_ITEM,
+    'page callback' => 'testmodule_mypage',
+    'access arguments' => array('access content'),
+  );
+  return $items;
+}
+
+/**
+ * Callback function
+ */
+function testmodule_mypage() {
+    return "<strong>This is a test page</strong>";
+}
