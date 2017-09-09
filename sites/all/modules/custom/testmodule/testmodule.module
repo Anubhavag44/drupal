@@ -17,7 +17,7 @@ function testmodule_menu() {
 }
 
 /**
- * Callback function
+ * Callback function.
  */
 function testmodule_mypage() {
     return "<strong>This is a test page</strong>";
